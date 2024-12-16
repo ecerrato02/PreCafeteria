@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/platos">
+
+    <fragment
+        android:id="@+id/platos"
+        android:name="com.example.precafeteria.platos"
+        android:label="fragment_platos"
+        tools:layout="@layout/fragment_platos" >
+        <action
+            android:id="@+id/action_platos_to_bebidas"
+            app:destination="@id/bebidas"
+            app:popUpTo="@id/platos" />
+    </fragment>
+    <fragment
+        android:id="@+id/bebidas"
+        android:name="com.example.precafeteria.bebidas"
+        android:label="fragment_bebidas"
+        tools:layout="@layout/fragment_bebidas" >
+        <action
+            android:id="@+id/action_bebidas_to_total"
+            app:destination="@id/total"
+            app:popUpTo="@id/platos" />
+    </fragment>
+    <fragment
+        android:id="@+id/total"
+        android:name="com.example.precafeteria.total"
+        android:label="fragment_total"
+        tools:layout="@layout/fragment_total" />
+</navigation>

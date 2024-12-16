@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PreCafeteria</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Plato">Lentejas con chorizo picante</string>
+    <string name="Precio">10€ 🤑</string>
+    <string name="Bebida">Coca cola espuma</string>
+    <string name="Titulo">TOTAL</string>
+    <string name="total">Total</string>
+    <string name="flecha">--></string>
+    <string name="escribe_la_cantidad">Escribe la cantidad</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="precioTotal">Precio</string>
+</resources>
